@@ -63,7 +63,7 @@ Success!
 ``` sh
 $ brew install glide
 $ ...(installing)
-$ cd $GOPATH/src/gitlab.ecoworkinc.com/arcadyan/owl-mock-server
+$ cd $GOPATH/src/github.com/hydnwang/elramir
 $ glide up
 $ ...(installing packages)
 ```
