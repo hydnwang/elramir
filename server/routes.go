@@ -1,9 +1,9 @@
 package server
 
 import (
-	"github.com/elramir/config"
-	"github.com/elramir/handlers"
 	"github.com/gin-gonic/gin"
+	"github.com/hydnwang/elramir/config"
+	"github.com/hydnwang/elramir/handlers"
 )
 
 func RoutersEngine() *gin.Engine {

@@ -3,7 +3,7 @@ package model
 import (
 	// "bytes"
 	"database/sql"
-	"github.com/elramir/helper"
+	"github.com/hydnwang/elramir/helper"
 	"github.com/hydnwang/goexif/exif"
 	_ "github.com/mattn/go-sqlite3"
 	"gopkg.in/gorp.v1"

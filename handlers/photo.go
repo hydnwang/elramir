@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"github.com/elramir/helper"
-	"github.com/elramir/model"
 	"github.com/gin-gonic/gin"
+	"github.com/hydnwang/elramir/helper"
+	"github.com/hydnwang/elramir/model"
 	"io"
 	"log"
 	"net/http"

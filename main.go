@@ -2,8 +2,8 @@ package main
 
 import (
 	"flag"
-	"github.com/elramir/config"
-	"github.com/elramir/server"
+	"github.com/hydnwang/elramir/config"
+	"github.com/hydnwang/elramir/server"
 )
 
 func main() {

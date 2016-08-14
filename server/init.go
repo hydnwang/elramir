@@ -1,9 +1,9 @@
 package server
 
 import (
-	"github.com/elramir/config"
-	"github.com/elramir/model"
 	"github.com/fvbock/endless"
+	"github.com/hydnwang/elramir/config"
+	"github.com/hydnwang/elramir/model"
 )
 
 func init() {
