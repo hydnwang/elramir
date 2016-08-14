@@ -91,7 +91,50 @@ Then, just wait a moment (it could be a while since Go is compiling our code) ti
 
 ## Run Test
 
-...
+There are few ways to run testing: 
+
+> **Important:** please put your own photo named `photo.jpg` in folder `tmp` before starting the test.
+
+### 1. Run testing right in the package directory
+
+``` sh
+$ cd $GOPATH/src/YOUR_PACKAGE_PATH
+$ go test -v -cover
+```
+
+### 2. Run package testing somewhere else
+
+``` sh
+# Package path: $GOPATH/src/YOUR_PACKAGE_PATH
+$ go test YOUR_PACKAGE_PATH -v -cover
+```
+
+### 3. Run package testing somewhere else with directory path
+
+``` sh
+# Package path: $GOPATH/src/YOUR_PACKAGE_PATH
+$ go test $GOPATH/src/YOUR_PACKAGE_PATH -v -cover
+```
+
+### 4. Try GoConvey (recommended)
+
+``` sh
+# Don't use glide, we need its bin exec file.
+$ go get github.com/smartystreets/goconvey
+$ cd $GOPATH/src/YOUR_PACKAGE_PATH
+$ $GOPATH/bin/goconvey
+```
+GoConvey will automatically open default browser for you and start to run test on your behalf, just press enter, sit back and wait!
+
+\** If you only want to run one or some of your test, just pass specific test case name (regex pattern) after option "run" being given: 
+
+``` sh
+$ go test PATH -run YOUR_TEST_NAME
+# let's say the test function name is TestGetPhotoHandler()
+$ go test PATH -run GetPhoto
+```
+
+This way, your test wiil find itself in the up one level directory, then there you go!
 
 ## Reference
 
