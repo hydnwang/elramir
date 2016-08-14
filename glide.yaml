@@ -1,0 +1,6 @@
+package: gitlab.ecoworkinc.com/arcadyan/owl-mock-server
+import:
+- package: github.com/gin-gonic/gin
+  version: develop
+- package: github.com/mattn/go-sqlite3
+- package: gopkg.in/gorp.v1

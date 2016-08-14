@@ -1,0 +1,2 @@
+-- INSERT INTO `photos` ( `name`, `file_path`, `created_at` ) 
+-- VALUES ( "test.jpg", "./upload/test99/test.jpg", datetime('now', 'localtime'));
